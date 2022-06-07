@@ -126,3 +126,43 @@ shorthand :
 
 
 5. padding: space inside elements
+6. width height 
+
+max-width
+min-width
+max-height
+min-height
+
+ 7. Text :
+ color : change text color
+ text alignment :
+ text-align 
+
+ 8. text-decoration : 
+    - text-decoration-line 
+       -overline
+       -line-through
+       - underline
+
+    - text-decoration-color
+    - text-decoration-style
+        - solid
+        -double
+        -dotted
+        -dashed
+        -wavy
+    - text-decoration-thickness
+
+  - text-decoration(shorthand):text-decoration-line(required) text-decoration-color text-decoration-style text-decoration-thickness
+
+ text-transfrom
+   - uppercase
+   -lowercase
+   -capitalize
+
+  text spacing
+   - text indent
+   - letter spacing
+   -line height
+   - word spacing
+   - white space
