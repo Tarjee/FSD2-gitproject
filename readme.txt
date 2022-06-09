@@ -1,4 +1,8 @@
-1. inline css - 
+1. inline css 
+2. Style tag
+    p,div,button
+    class name
+    id 
 
 CSS 
  <p style = 'color:red'> Text</p>
@@ -166,3 +170,26 @@ min-height
    -line height
    - word spacing
    - white space
+
+  8. fonts
+    - font family
+    - serif
+    - sans-serif
+    - monospace
+    - cursive
+    - fantasy
+      Arial , Times, monospace(fall back font family)
+
+      - font-style
+        - normal
+        - italic 
+        - oblique
+
+
+    - font-weight 
+
+    - font-size 
+        
+font(shorthand) : font-style font-variant font-weight font-size font-family
+
+
