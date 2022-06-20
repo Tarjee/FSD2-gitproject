@@ -3,13 +3,13 @@
   <head>
     <title>CSS</title>
     <style>
+      
       p {
+        
         color: #6a5aff;
         background-color: aliceblue;
       }
-      div {
-        background-color: gray;
-      }
+
       h1 {
         background-color: whitesmoke;
       }
@@ -44,18 +44,202 @@
       #color {
         color: azure;
       }
+      #customers {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        /*border: 1px solid black;*/
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #customers td,
+      #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      #customers th {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        background-color: rgb(4, 89, 4);
+        color: white;
+      }
+      #customers tr:nth-child(even) {
+        background-color: hsl(0, 14%, 78%);
+      }
+      #customers tr:hover {
+        background-color: #ddd;
+      }
+      /* li{
+        display: inline;
+      } */
+      .firstul li {
+        display: inline;
+      }
+      .firstul a {
+        text-decoration: none;
+      }
+      .parent {
+        background-color: aqua;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        height: 500px;
+      }
+      #child-one {
+        background-color: yellow;
+        padding: 5px;
+        position: sticky;
+        top: 10px;
+        left: 0px;
+      }
+      #child-two {
+        background-color: tomato;
+
+        padding: 5px;
+      }
+      #child-three {
+        background-color: green;
+
+        padding: 5px;
+      }
+      .center-div {
+        background-color: #6a5aff;
+        width: 30rem; /* 1 rem - 16px */
+        max-width: 95%;
+        text-align: center;
+        margin: 2rem auto;
+      }
+      .center-div:hover {
+        background-color: gray;
+      }
+      /* div p {
+        background-color: yellow;
+      } */
+      /* div > p {
+        background-color: yellow;
+      } */
+      /* div + p {
+        background-color: yellow;
+      } */
+      div ~ p {
+        background-color: yellow;
+      }
+
+      .mouseOver {
+        background-color: green;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .mouseOver:hover {
+        background-color: #6a5aff;
+      }
+      p {
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+      }
+      .hintcss:hover p {
+        display: block;
+      }
     </style>
   </head>
   <!-- <body style= "background-image:url('https://placekitten.com/200/300')">
       repeat , repeat-x , repeat-y , no-repeat
 -->
-  <body
-    style="
-      background-image: url('https://placekitten.com/200/300');
-      background-repeat: no-repeat;
-      background-position: right top;
-    "
-  >
+  <body>
+    
+    <form>
+      <label for="email"style="display: block ">Email</label>
+      <input type="email" name="email" id="email" />
+    </form>
+    
+    <p>This is 1st para</p>
+    <p>This is 2nd para</p>
+    <div>
+      <p>This is 1st para</p>
+      <p>This is 2nd para</p>
+    
+    <br> <br>
+    </div>
+    <a
+      href="https://zoom.us/j/91557713375?pwd=TVcrT0ZQUTc0K3YyYWVGTlZXSnNvdz09"
+      target="_blank"
+    >
+      Zoom
+    </a>
+    <div class="hintcss">
+      mouse over to see the hint
+      <p>this is good</p>
+    </div>
+    <div class="mouseOver">Mouse over css</div>
+
+    <div>
+      <p>This is first pera in div</p>
+      <p>This is second pera in div</p>
+      <section><p>this is pera within section</p></section>
+    </div>
+    <p>this is pera after div.</p>
+    <code>this is text</code>
+    <p>this is pera after div.</p>
+
+    <div class="center-div">this is centered div</div>
+    <div class="parent">
+      parent
+      <div id="child-one">child one</div>
+      <div id="child-two">child two</div>
+      <div id="child-three">child three</div>
+    </div>
+    
+    
+    
+
+    <ul class="firstul">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">Node</a></li>
+    </ul>
+<!-- <a href="#">First</a>
+<a href="#">Second</a>
+<h3>This is heading</h3>
+<a href="#">Hello</a> -->
+    <table id="customers">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Contract</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jess</td>
+          <td>Maria</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Faiza</td>
+          <td>Tasmin</td>
+          <td>Bangladesh</td>
+        </tr>
+      </tbody>
+        
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jess</td>
+          <td>Maria</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Faiza</td>
+          <td>Tasmin</td>
+          <td>Bangladesh</td>
+        </tr>
+      </tbody>
+    </table>
+    
+
     <p style="color: red">Text</p>
     <h1 style="color: blue">Heading</h1>
     <h2 class="Heading1">This is rgb color</h2>
@@ -147,7 +331,7 @@
         float: right;
       "
     >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cumque
+      Lorem ipsum dolor <span style="color:blue ;">sit amet</span> consectetur adipisicing elit. Aliquam cumque
       atque eos ipsam cum. Recusandae soluta assumenda possimus, magni rerum
       obcaecati optio, vero ipsam fugiat nobis, voluptatum sed rem a?Recusandae
       soluta assumenda possimus, magni rerum obcaecati optio, vero ipsam fugiat
@@ -253,5 +437,7 @@
     ></div>
 
     <br /><br /><br /><br /><br />
+
+   
   </body>
 </html>

@@ -3,7 +3,7 @@
     p,div,button
     class name
     id 
-
+3. external stylesheet
 CSS 
  <p style = 'color:red'> Text</p>
 
@@ -171,7 +171,7 @@ min-height
    - word spacing
    - white space
 
-  8. fonts
+  8. Fonts
     - font family
     - serif
     - sans-serif
@@ -192,4 +192,107 @@ min-height
         
 font(shorthand) : font-style font-variant font-weight font-size font-family
 
+9.Display:
 
+  Block-level elements 
+    div
+    h1 -h6
+    p 
+    form 
+    header 
+
+  inline elements
+    span 
+    a 
+    img 
+
+ none:    
+
+10.float : 
+    - left 
+    - right 
+    - none 
+    - inherit 
+
+
+11. position:
+   - static
+        - top , bottom, left , right(can't change)
+   -relative
+   - fixed 
+   - absolute 
+   - sticky
+
+12. units:
+    absolute
+    - cm 
+    - mm 
+    - in 1in = 96px
+    - px 
+    - pt 
+    - pc 
+
+  - relative
+     - em 2 em 2 time size  2em 2* current font-size 16px 
+     - ex x-height 
+     - rem 1 rem = 16px 
+     - vh - %
+     - vw  - %
+     = % 
+
+     px 
+     rem 
+     % 
+     em 
+
+13. combinators :
+      - descendent selector ( ) div p
+      - child selector (>)       div > p 
+      - adjacent sibling selector (+) div + p
+      - general sibling selector (-) div ~ p 
+
+14. pseudo-class 
+     - element: hover ->mouse over 
+
+     :frist-child 
+
+15. pseudo-element
+
+ selector::pseudo-element 
+ ::first-line - block elements
+     - font 
+     - color 
+     - background 
+     - word-spacing
+     - letter-spacing
+     - text-decoration
+    ::first-letter 
+
+    ::after 
+
+  16. display 
+     Flexbox layout
+     flex-direction : row,column,row-reverse,column-reverse
+
+     axis :
+     row row-reverse 
+      main-axis 
+      cross-axis 
+
+
+      column column-reveerse 
+      main-axis 
+      cross-axis
+
+flex: 
+
+flex shorthand: flex-grow flex-shrink flex-basis
+flex-flow shorthand : flex-direction flex-wrap 
+flex-flow: column wrap 
+
+
+
+
+  grid :
+   grid-column : grid-column-start grid-column-end
+   grid-area: grid-row-start / grid-column-start / grid-row-end /grid-column-end
