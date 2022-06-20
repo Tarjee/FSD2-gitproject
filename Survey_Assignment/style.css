@@ -1,11 +1,49 @@
 form {
-  background-image: url("../Survey_Assignment/images/08bcd1a0c82eba91de99d622d746ad86.jpeg");
-  background-repeat: no-repeat;
+  background-color: rgba(59, 141, 121, 0.496);
+
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 30px;
+}
+div {
+  color: white;
 }
 
 h3 {
-  text-align: left;
+  text-align: center;
 }
 p {
-  text-align: left;
+  text-align: center;
+}
+div > label {
+  display: block;
+  padding: 10px;
+}
+#boxWidth,
+input,
+select {
+  padding-right: 350px;
+}
+/* 
+.gender,
+input {
+  width: auto;
+  display: inline;
+} */
+
+h4 {
+  color: white;
+  text-align: center;
+}
+.button {
+  width: 450px;
+  text-align: center;
+  background-color: rgb(7, 62, 7);
+  color: white;
+
+  margin-left: 20px;
+}
+.button:hover {
+  background-color: rgb(159, 64, 64);
 }
